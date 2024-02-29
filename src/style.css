@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(313deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(23, 23, 23, 1) 100%);
+  background: -webkit-linear-gradient(313deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(23, 23, 23, 1) 100%);
+  background: linear-gradient(313deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(23, 23, 23, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#171717", GradientType=1);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  z-index: 9999;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.pt-8 {
+  padding-top: 75px;
+}
+
+.pt-10 {
+  padding-top: 100px;
+}
+
+.mt-10 {
+  margin-top: 100px;
+}
+
+.card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  object-fit: cover;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  /* veya istediğiniz başka bir renk */
+}
+
+.modal-body {
+  background-color: transparent;
+  /* veya istediğiniz başka bir renk */
+}
+
+.modal-body {
+  color: white;
+  /* veya istediğiniz başka bir renk */
+}
+
+.modal-caption {
+  backdrop-filter: blur(15px);
+  padding: 15px 15px 0 15px;
+  border: 1px solid white;
+}
+
+/* style.css (veya istediğiniz CSS dosyası) */
+.modal-content {
+  max-width: 90%;
+  /* İstediğiniz genişliği ayarlayabilirsiniz */
+  margin: 0 auto;
+}
+
+.caption {
+  font-size: 30px;
+  /* Varsayılan font boyutu */
+}
+
+.caption-small {
+  font-size: 16px;
+  /* Uzun caption için küçük font boyutu */
+}
+
+.card {
+  border: 4px solid #212529 !important;
+  transition: .25s;
+}
+
+.card:hover {
+  border: 4px solid #44b5fc !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* Kaydırma çubuğu genişliği */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #212529;
+  /* Kaydırma çubuğu arka plan rengi */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #44b5fc;
+  /* Kaydırma çubuğu dolgu rengi */
+  border-radius: 5px;
+  /* Dolgu renginin yuvarlaklığı */
+  border: 2px solid #212529;
+  /* Dolgu renginin kenarlığı */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4ca5f5;
+  /* Kaydırma çubuğu dolgu rengi (hover durumunda) */
+}
+
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* style.css veya istediğiniz stil dosyasında */
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #44b5fc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  /* İstediğiniz arkaplan rengini burada belirleyebilirsiniz */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.navbar-icon {
+  font-size: 40px;
+  /* İkon boyutunu buradan ayarlayabilirsiniz */
+  margin: 0 25px;
+}
+
+.logo {
+  width: 450px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 390px;
+  }
+
+  .caption-small {
+    font-size: 20px !important;
+  }
+
+  .caption {
+    font-size: 30px !important;
+  }
+
+  .modal-content {
+    max-width: 100%;
+    /* İstediğiniz genişliği ayarlayabilirsiniz */
+    margin: 0 auto;
+  }
+
+  .modal-body {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .logo {
+    width: 270px;
+  }
+
+  .caption-small {
+    font-size: 15px !important;
+  }
+
+  .caption {
+    font-size: 25px !important;
+  }
+}
+
+.navbar-collapse {
+
+  flex-grow: 0 !important;
+
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
+.nav-text-lg {
+  font-size: 25px !important;
+  /* İstediğiniz büyüklüğü burada ayarlayabilirsiniz */
+  margin: 0 20px;
+  font-weight: 600 !important;
+}
+
+.nav-text-lg:hover {
+  color: #44b5fc !important;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222831;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease;
+  /* Opaklığı değiştirirken animasyon uygula */
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  /* Görünürlüğü sıfırlayarak loader'ı gizle */
+  pointer-events: none;
+  /* Gizlendikten sonra tıklamaları engelle */
+}
+
+.loader {
+  border: 4px solid #00adb5;
+  border-top: 4px solid #393e46;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  --bs-card-inner-border-radius: none !important;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.phone {
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0, 0.1);
+}
+
+.mail {
+  border: 1px solid rgb(0, 219, 0);
+  background-color: rgb(0, 219, 0, 0.1);
+}
+
+.instagram {
+  border: 1px solid rgb(32, 32, 255);
+  background-color: rgb(32, 32, 255, 0.1);
+}
+
+.phone:hover {
+  box-shadow: 0 0 10px rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+}
+
+.mail:hover {
+  box-shadow: 0 0 10px rgb(0, 219, 0);
+  background-color: rgb(0, 219, 0);
+}
+
+.instagram:hover {
+  box-shadow: 0 0 10px rgb(32, 32, 255);
+  background-color: rgb(32, 32, 255);
+}
+
+.box {
+  width: 150px;
+  border-radius: 40px;
+  height: 50px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: .25s;
+}
+
+.box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50px;
+}
+
+.pp-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center -10px;
+}
+
+.portfolio-margin-top {
+  margin-top: 100px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .box {
+    margin: 10px 0
+  }
+
+  .pp-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .portfolio-margin-top {
+    margin-top: 77px !important;
+  }
+}
+
+.custom-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.custom-card-body {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.custom-card-body p {
+  color: gray;
+  margin-top: 15px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 490px) {
+  .custom-card-body h2 {
+    font-size: 17px !important;
+  }
+
+  .custom-card-img-start img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .custom-card {
+    text-align: center;
+  }
+}
